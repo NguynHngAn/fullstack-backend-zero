@@ -1,0 +1,27 @@
+{
+  "name": "backend0",
+  "version": "1.0.0",
+  "description": "Learn backend from zero with An and Node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguynHngAn/fullstack-backend-zero.git"
+  },
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "author": "An",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NguynHngAn/fullstack-backend-zero/issues"
+  },
+  "homepage": "https://github.com/NguynHngAn/fullstack-backend-zero#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
