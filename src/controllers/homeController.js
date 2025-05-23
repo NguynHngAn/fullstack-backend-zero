@@ -1,7 +1,16 @@
-
+const connection = require('../config/database');
 
 const getHomepage = (req, res) => {
-    res.send('Learn Nodejs with HoidanIT and Ankk')
+    let users = [];
+    connection.query(
+        'select * from Users u',
+        function(err, results, fields) {
+            users = results;
+          console.log(">>> results: ", results); // results contains rows returned by server
+          console.log(">> check user: ", users);
+          res.send(JSON.stringify(users));
+        }
+      );
 }
 
 const getabc = (req, res) => {
