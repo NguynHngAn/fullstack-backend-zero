@@ -12,8 +12,14 @@ const gethongan = (req, res) => {
     res.render('sample.ejs')
 }
 
+const postCreateUser = (req, res) => {
+    console.log('>>> req.body: ', req.body);
+    res.send('Create a new User')
+}
+
 module.exports = {
     getHomepage,
     getabc,
-    gethongan
+    gethongan,
+    postCreateUser
 }
